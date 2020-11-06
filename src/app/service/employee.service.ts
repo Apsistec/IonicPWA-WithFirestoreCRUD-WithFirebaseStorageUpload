@@ -77,7 +77,7 @@ export class EmployeeService {
       "ERROR FirebaseError: The query requires an index. You can create it here: URL"
 
       You will get above error with an URL - Click over that URL - Login in Firebase
-      and this will prompt to Create an Index which is required in Firebase 
+      and this will prompt to Create an Index which is required in Firebase
       to apply queries to Database Collection.
     */
     return this.firestore.collection(

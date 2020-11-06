@@ -46,9 +46,9 @@ export class AppComponent {
     public authService: AuthService
   ) {
     this.initializeApp();
-    let a = new HomePage();
-    let b = new HomePage();
-    let c = new HomePage();
+    const a = new HomePage();
+    const b = new HomePage();
+    const c = new HomePage();
   }
 
   initializeApp() {

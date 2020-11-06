@@ -42,7 +42,7 @@ export class HomePage implements OnInit, OnDestroy {
   ngOnInit() {
     console.log('home page ngOnInit');
     // create an Observable
-    this.observableNumber$ = Observable.create(observer => {
+    this.observableNumber$ = new Observable(observer) => {
       // initialize value of temp variable 'val' with 0
       let val = 0;
       const interval = setInterval(() => {
@@ -53,35 +53,35 @@ export class HomePage implements OnInit, OnDestroy {
         val++;
       }, 1000);
       return () => clearInterval(interval);
-    });
+    }
 
-    this.observableNumber$
-    .pipe(takeUntil(this.unsubscribe$))
-    .subscribe(value => {
-      this.latestValue = value;
-    });
+    // this.observableNumber$
+    // .pipe(takeUntil(this.unsubscribe$))
+    // .subscribe(value => {
+    //   this.latestValue = value;
+    // });
 
     // subscribe to an Observable
     // make sure to save a reference to subscription to
     // be able to unsubscribe later
-    this.subscriptionToObservableNumber = this.observableNumber$.subscribe(value => {
-      // this subscription make sure to have latest value always
-      this.latestValue = value;
-    });
+    // this.subscriptionToObservableNumber = this.observableNumber$.subscribe(value => {
+    //   // this subscription make sure to have latest value always
+    //   this.latestValue = value;
+    // });
 
-    // create an Observable
-    this.observableNumber$ = Observable.create(observer => {
-      // initialize value of temp variable 'val' with 0
-      let val = 0;
-      const interval = setInterval(() => {
-        // observer.next will announce the change made in 'val
-        // by 'observableNumber'
-        observer.next(val);
-        // increment value of 'val' after every 1 sec
-        val++;
-      }, 1000);
-      return () => clearInterval(interval);
-    });
+    // // create an Observable
+    // this.observableNumber$ = new Observable(observer => {
+    //   // initialize value of temp variable 'val' with 0
+    //   let val = 0;
+    //   const interval = setInterval(() => {
+    //     // observer.next will announce the change made in 'val
+    //     // by 'observableNumber'
+    //     observer.next(val);
+    //     // increment value of 'val' after every 1 sec
+    //     val++;
+    //   }, 1000);
+    //   return () => clearInterval(interval);
+    // });
   }
 
   ngOnDestroy() {

@@ -1,6 +1,6 @@
 {
-  "appId": "pwachitchat.codechintan.com",
-  "appName": "pwaChitChat",
+  "appId": "pwa-chit-chat.codechintan.com",
+  "appName": "pwa-chit-chat",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

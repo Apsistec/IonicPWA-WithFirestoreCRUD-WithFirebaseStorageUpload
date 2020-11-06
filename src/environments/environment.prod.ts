@@ -1,12 +1,13 @@
 export const environment = {
   production: true,
-  firebase : {
-    apiKey: 'AIzaSyCcNfs06ONZeiy_WOW1F1_Bi7MCUMlaRiQ',
-    authDomain: 'pwachitchat.firebaseapp.com',
-    databaseURL: 'https://pwachitchat.firebaseio.com',
-    projectId: 'pwachitchat',
-    storageBucket: 'pwachitchat.appspot.com',
-    messagingSenderId: '134737038795',
-    appId: '1:134737038795:web:c6932b5354ae696ad43a4e'
-  }
+  firebase: {
+    apiKey: 'AIzaSyAbEKBKqZX0nCtEWadvoxqnWi_q64DuwfQ',
+    authDomain: 'everything-demo.firebaseapp.com',
+    databaseURL: 'https://everything-demo.firebaseio.com',
+    projectId: 'everything-demo',
+    storageBucket: 'everything-demo.appspot.com',
+    messagingSenderId: '999874670557',
+    appId: '1:999874670557:web:e70ff5d94becaa117f1034',
+    measurementId: 'G-F6SELRR9N3',
+  },
 };

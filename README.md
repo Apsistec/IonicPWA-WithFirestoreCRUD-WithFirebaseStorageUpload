@@ -32,7 +32,7 @@ Link to tutorial:
 https://www.codewithchintan.com/angular-async-pipe/
 
 
-## CHECK DEMO (Hosting URL): https://pwachitchat.firebaseapp.com
+## CHECK DEMO (Hosting URL): https://pwa-chit-chat.firebaseapp.com
 
 ## DO NOT FORGET to replace Firebase Configuration with yours in your environment.ts files:
 * (for local 👉) YOUR-PROJECT-DIRECTORY/src/environments/environment.ts

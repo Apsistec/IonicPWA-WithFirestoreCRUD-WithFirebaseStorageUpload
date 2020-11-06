@@ -22,11 +22,11 @@ export class ListPage implements OnInit {
   ];
   public items: Array<{ title: string; note: string; icon: string }> = [];
   constructor() {
-    let a = new HomePage();
-    let b = new HomePage();
+    const a = new HomePage();
+    const b = new HomePage();
 
     b.watchPosition();
-    
+
     for (let i = 1; i < 11; i++) {
       this.items.push({
         title: 'Item ' + i,

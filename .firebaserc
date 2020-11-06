@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "pwachitchat",
-    "pwacc": "pwachitchat"
+    "default": "everything-demo"
   }
 }
